@@ -30,17 +30,29 @@ $(document).ready(function(){
 
 function Act()
 {
-	
+	for(var i = 0; i < TODOList.length; i++)
+	{
+		if(TODOList[i].state == "Active") continue;
+		var html = $("<li>" + TODOList[i].name +"</li>");
+	}
 }
 
 function Complete()
 {
-
+	for(var i = 0; i < TODOList.length; i++)
+	{
+		if(TODOList[i].state == "Complete") continue;
+		var html = $("<li>" + TODOList[i].name +"</li>");
+	}
+	
 }
 
 function All()
 {
-
+	for(var i = 0; i < TODOList.length; i++)
+	{
+		var html = $("<li>" + TODOList[i].name +"</li>");
+	}
 }
 
 function Add()
