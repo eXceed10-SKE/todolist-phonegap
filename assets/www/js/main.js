@@ -9,6 +9,6 @@ var app = {
         app.receivedEvent('deviceready');
     },
     receivedEvent: function(id) {
-        
+        console.log('asdas')
     }
 };
