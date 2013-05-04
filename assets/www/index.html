@@ -23,38 +23,45 @@
         <div data-role="page" id="home">
             <div data-role="header">
                 <h1>Todo List</h1>
+                 <a href="#dialog" data-rel="dialog" data-role="button" data-icon="add" class="ui-btn-right">Add</a>
             </div>
             <div data-role="content">   
-                <ul data-role="listview">
-                    <li>list#1</li>
-                    <li>list#2</li>
-                    <li>list#3</li>
-                </ul>       
+                <label><input type="checkbox" name="checkbox-0" /> I agree </label>
+                <label><input type="checkbox" name="checkbox-0" /> I agree </label>
+                <label><input type="checkbox" name="checkbox-0" /> I agree </label>      
             </div>
             <div data-role="footer" data-position="fixed">
-                <a href="#home">Todo List</a>
-                <a href="#active">Active List</a>
-                <a href="#complete">Complete List</a>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#home">Todo List</a></li>
+                        <li><a href="#active">Active List</a></li>
+                        <li><a href="#complete">Complete List</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <!-- end index page -->
 
         <!-- complete page -->
-        <div data-role="page" id="complete">
+        <div data-role="page" data-transition="flip" id="complete">
             <div data-role="header">
                 <h1>Complete List</h1>
             </div>
             <div data-role="content">   
                 <ul data-role="listview">
-                    <li>list#1</li>
-                    <li>list#2</li>
-                    <li>list#3</li>
+                    <li><label><input type="checkbox" name="checkbox-0" /> I agree </label></li>
+                    <li><label><input type="checkbox" name="checkbox-0" /> I agree </label></li>
+                    <li><label><input type="checkbox" name="checkbox-0" /> I agree </label></li>
                 </ul>       
             </div>
             <div data-role="footer" data-position="fixed">
-                <a href="#home">Todo List</a>
-                <a href="#active">Active List</a>
-                <a href="#complete">Complete List</a>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#home">Todo List</a></li>
+                        <li><a href="#active">Active List</a></li>
+                        <li><a href="#complete">Complete List</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <!-- end complete page -->
@@ -72,11 +79,34 @@
                 </ul>       
             </div>
             <div data-role="footer" data-position="fixed">
-                <a href="#home">Todo List</a>
-                <a href="#active">Active List</a>
-                <a href="#complete">Complete List</a>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#home">Todo List</a></li>
+                        <li><a href="#active">Active List</a></li>
+                        <li><a href="#complete">Complete List</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <!-- end active page -->
+
+
+        <div data-role="dialog" id="dialog">
+            <div data-role="header">
+                <h1>Todo List</h1>
+            </div>
+            <div data-role="content">   
+                <h1>KUY jQuery Mobile</h1>
+                <input type="text">    
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#home">Add</a></li>
+                        <li><a href="#active">Cancel</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
