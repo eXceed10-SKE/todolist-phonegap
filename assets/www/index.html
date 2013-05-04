@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="jquery.mobile-1.3.1/jquery.mobile.structure-1.3.1.css">
         <link rel="stylesheet" href="jquery.mobile-1.3.1/jquery.mobile-1.3.1.css">
         <link rel="stylesheet" href="jquery.mobile-1.3.1/jquery.mobile.theme-1.3.1.css">
-        <link rel="stylesheet" href="css/style.css">
         <!-- end stylesheet -->
         
         <!-- script -->
@@ -20,6 +19,62 @@
         <!-- end script -->
     </head>
     <body>
-        
+        <!-- index page -->
+        <div data-role="page" id="home">
+            <div data-role="header">
+                <h1>Todo List</h1>
+            </div>
+            <div data-role="content">   
+                <ul data-role="listview">
+                    <li>list#1</li>
+                    <li>list#2</li>
+                    <li>list#3</li>
+                </ul>       
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <a href="#active">Todo List</a>
+                <a href="#active">Active List</a>
+                <a href="#complete">Complete List</a>
+            </div>
+        </div>
+        <!-- end index page -->
+
+        <!-- complete page -->
+        <div data-role="page" id="complete">
+            <div data-role="header">
+                <h1>Complete List</h1>
+            </div>
+            <div data-role="content">   
+                <ul data-role="listview">
+                    <li>list#1</li>
+                    <li>list#2</li>
+                    <li>list#3</li>
+                </ul>       
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <a href="#active">Active List</a>
+                <a href="#complete">Complete List</a>
+            </div>
+        </div>
+        <!-- end complete page -->
+
+        <!-- active page -->
+        <div data-role="page" id="active">
+            <div data-role="header">
+                <h1>Active List</h1>
+            </div>
+            <div data-role="content">   
+                <ul data-role="listview">
+                    <li>list#1</li>
+                    <li>list#2</li>
+                    <li>list#3</li>
+                </ul>       
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <a href="#active">Active List</a>
+                <a href="#complete">Complete List</a>
+            </div>
+        </div>
+        <!-- end active page -->
     </body>
 </html>
